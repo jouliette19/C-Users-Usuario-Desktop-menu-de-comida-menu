@@ -1,0 +1,54 @@
+body{
+  
+}
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.column-2.menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap:  1rem;
+}
+
+.menu-restaurante{
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+
+.img-menu-restaurante{
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+}
+
+.img-menu-restaurante img{
+    max-width: 100px;
+    max-height: 75px;
+}
+
+.title-menu-restaurante{
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-top:  none;
+    flex-basis: 60%;
+    padding: 0 1rem;
+
+}
+
+.precio-menu-restaurante{
+    display: flex;
+    flex-basis: 15%;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@media (max-width: 680px){
+    .column-2.menu{
+        grid-template-columns: repeat(1,1fr);
+    }
